@@ -1,6 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .top-container {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 35vh;
+    /*background-color: darkgrey;*/
+}
+
+.hero-container {
+    min-height: 35vh;
+    background-image: url("https://images.pexels.com/photos/2212858/pexels-photo-2212858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
