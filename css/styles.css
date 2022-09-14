@@ -18,3 +18,107 @@
     min-height: 35vh;
     background-image: url("https://images.pexels.com/photos/2212858/pexels-photo-2212858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
+
+.main-content-container {
+    /*margin: 0;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* makes them into centered cards */
+    justify-content: space-evenly;
+    min-height: 260vh;
+    background-color: #F4F4F2;
+}
+
+.intro {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    display: flex;
+    width: 70%;
+}
+
+.item-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-around;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+    /*padding-left: 40px;*/
+    /*padding-right: 40px;*/
+    padding: 20px 40px; /* 20px top & bottom, 40px left & right */
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 70%;
+    height: fit-content; /* makes it fit the content */
+}
+
+.item-container img {
+    width: 192px;
+    height: 192px;
+}
+
+.item-container h3 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #4F4F4F;
+    padding-bottom: 10px;
+}
+
+.item-container p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #4F4F4F;
+    padding-bottom: 10px;
+}
+
+.item-container table {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    border: #4F4F4F solid 1px;
+}
+
+table, td, th {
+    padding: 10px;
+    border: 1px solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding-bottom: 10px;
+}
+
+a {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: red;
+}
+
+.app-img {
+    flex: 1;
+}
+
+.app-info {
+    flex: 2;
+}
+
+.footer-container{
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    border-top: black 1px solid;
+    height: 15vh;
+    background-color: #F4F4F2;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding-left: 25px;
+    padding-right: 25px;
+}
