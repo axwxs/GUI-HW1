@@ -1,7 +1,10 @@
+/* Resets the margin and padding so they are flush with the browser window */
 * {
     margin: 0;
     padding: 0;
 }
+
+/* This is the actual top heading text and its styling*/
 
 .top-container {
     color: white;
@@ -11,16 +14,17 @@
     align-items: center;
     justify-content: center;
     min-height: 35vh;
-    /*background-color: darkgrey;*/
 }
 
+/* This is the container for the heading text and it uses a space image for its background from a royalty free stock image website
+also sets the components height */
 .hero-container {
     min-height: 35vh;
     background-image: url("https://images.pexels.com/photos/2212858/pexels-photo-2212858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
+/* This sets the height for the main content and makes it a flexbox in column style so the cards stack vertically */
 .main-content-container {
-    /*margin: 0;*/
     display: flex;
     flex-direction: column;
     align-items: center; /* makes them into centered cards */
@@ -28,7 +32,8 @@
     min-height: 260vh;
     background-color: #F4F4F2;
 }
-
+/* Gives the introductory description some text styling sets the width so that it doesn't span the entire page
+ and look awful */
 .intro {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -37,6 +42,8 @@
     width: 70%;
 }
 
+/* Sets the base styling for each item container like border, spacing, gap, width to match the above text.
+Uses flexbox to center them. */
 .item-container {
     text-align: center;
     display: flex;
@@ -54,11 +61,13 @@
     height: fit-content; /* makes it fit the content */
 }
 
+/* Used to make sure all images are the same dimensions even if original ones differ */
 .item-container img {
     width: 192px;
     height: 192px;
 }
 
+/* Makes the App name a bit more prominent and adds base styling similar to the rest of the page */
 .item-container h3 {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -66,6 +75,7 @@
     padding-bottom: 10px;
 }
 
+/* Adds base styling similar to the rest of the page for the app description */
 .item-container p {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -73,6 +83,7 @@
     padding-bottom: 10px;
 }
 
+/* Adds base styling similar to the rest of the page for the text inside the html table */
 .item-container table {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -80,40 +91,44 @@
     border: #4F4F4F solid 1px;
 }
 
+/* Gives spacing and a small border to make the pro/con table an actually visible table */
 table, td, th {
     padding: 10px;
     border: 1px solid;
 }
 
+/* Sets the width so the table stretchs the full div and gets rid of double borders */
 table {
     width: 100%;
     border-collapse: collapse;
     padding-bottom: 10px;
 }
 
+/* Gives same font family other text has been using to the link and makes it red to stand out */
 a {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     color: red;
 }
 
+/* Uses the parent flexbox set a relative amount of space to take up for the app image (1/3 here) */
 .app-img {
     flex: 1;
 }
 
+/* Uses the parent flexbox set a relative amount of space to take up for the app image (2/3 here) */
 .app-info {
     flex: 2;
 }
 
+/* Sets a height and top border so that footer appears and is apparent */
 .footer-container{
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: space-between;*/
     border-top: black 1px solid;
     height: 15vh;
     background-color: #F4F4F2;
 }
 
+/* Uses flexbox to space out my name and the css validator image like a standard footer usually looks */
 .footer-content{
     display: flex;
     align-items: center;
